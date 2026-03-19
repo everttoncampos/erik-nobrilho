@@ -1,3 +1,4 @@
+import BeforeAfterSlider from '../components/BeforeAfterSlider';
 import ContactCard from '../components/ContactCard';
 import CTAButton from '../components/CTAButton';
 import FeatureCard from '../components/FeatureCard';
@@ -11,109 +12,109 @@ import heroImage from '../assets/hero.png';
 
 const featureItems = [
   {
-    title: 'Acabamento Premium',
-    description: 'Cada etapa é pensada para entregar brilho refinado e presença visual de alto padrão.',
+    title: 'Refinamento de acabamento',
+    description: 'Execução técnica para revelar brilho limpo e uniforme, com leitura premium em cada ângulo.',
   },
   {
-    title: 'Atenção Aos Detalhes',
-    description: 'Cuidado técnico em cada superfície para um resultado limpo, uniforme e sofisticado.',
+    title: 'Atenção a cada superfície',
+    description: 'Do painel aos detalhes de pintura, cada etapa recebe cuidado meticuloso e padrão elevado.',
   },
   {
-    title: 'Proteção e Valorização',
-    description: 'Serviços que ajudam a preservar o visual e valorizar a estética do veículo.',
+    title: 'Valorização visual do veículo',
+    description: 'Uma apresentação mais elegante e impactante para preservar presença e percepção de valor.',
   },
   {
-    title: 'Atendimento Exclusivo',
-    description: 'Atendimento reservado e organizado para uma experiência personalizada.',
+    title: 'Atendimento sob agendamento',
+    description: 'Agenda exclusiva para dedicar tempo, precisão e foco total no resultado do seu carro.',
   },
   {
-    title: 'Cuidado Interno e Externo',
-    description: 'Do acabamento da pintura ao interior, tudo para elevar o nível do seu carro.',
+    title: 'Cuidado interno e externo',
+    description: 'Harmonia entre cabine e carroceria para entregar um resultado completo, limpo e sofisticado.',
   },
 ];
 
 const services = [
   {
     title: 'Lavagem',
-    description: 'Limpeza cuidadosa para realçar o visual do veículo com aparência impecável.',
+    description: 'Revitalização cuidadosa para recuperar clareza visual e presença no dia a dia.',
   },
   {
     title: 'Higienização',
-    description: 'Renove o interior com limpeza técnica para mais conforto e sensação de novo.',
+    description: 'Tratamento técnico para interior limpo, confortável e com sensação de ambiente renovado.',
   },
   {
     title: 'Detalhamento',
-    description: 'Tratamento minucioso para destacar cada linha e acabamento do carro.',
+    description: 'Ajustes finos para elevar acabamento, leitura de linhas e elegância do conjunto.',
   },
   {
     title: 'Polimento',
-    description: 'Mais brilho, profundidade e sofisticação para a pintura.',
+    description: 'Mais profundidade de brilho e acabamento sofisticado para pintura com visual de destaque.',
   },
   {
     title: 'Vitrificação',
-    description: 'Proteção com acabamento refinado, mantendo o brilho por mais tempo.',
+    description: 'Proteção refinada com acabamento nobre para manter o visual por mais tempo.',
   },
   {
     title: 'Insulfilm',
-    description: 'Conforto, estilo e privacidade com aplicação profissional.',
+    description: 'Aplicação profissional para equilíbrio entre estética, conforto e privacidade.',
   },
   {
     title: 'Higienização de estofados',
-    description: 'Remoção de sujeiras e revitalização para um interior mais elegante.',
+    description: 'Limpeza especializada para renovar textura, aparência e conforto da cabine.',
   },
 ];
 
 const experiencePoints = [
-  'Brilho com presença e impacto visual',
-  'Proteção que preserva a estética',
-  'Valorização da aparência do veículo',
-  'Sensação de carro novo em cada detalhe',
-  'Cuidado profissional do início ao acabamento',
+  'Brilho sofisticado e sem aspecto artificial',
+  'Proteção estética para rotina urbana',
+  'Leitura visual de carro bem cuidado',
+  'Sensação de renovação ao entrar e dirigir',
+  'Atendimento profissional com foco em resultado',
 ];
 
 const galleryItems = [
   {
-    title: 'Acabamento Espelhado',
-    subtitle: 'Substitua por foto real do resultado final',
+    title: 'Reflexo de pintura',
+    subtitle: 'Área pronta para foto real de resultado final',
     image: heroImage,
   },
   {
-    title: 'Detalhamento Interno',
-    subtitle: 'Substitua por foto real do interior',
+    title: 'Acabamento de interior',
+    subtitle: 'Área pronta para foto real de higienização',
   },
   {
-    title: 'Proteção de Pintura',
-    subtitle: 'Substitua por foto real da vitrificação',
+    title: 'Tratamento de proteção',
+    subtitle: 'Área pronta para foto real de vitrificação',
   },
   {
-    title: 'Finalização Premium',
-    subtitle: 'Substitua por foto real de entrega',
+    title: 'Entrega premium',
+    subtitle: 'Área pronta para foto real de entrega ao cliente',
     image: heroImage,
   },
 ];
 
 function SparkIcon() {
   return (
-    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">
-      <path d="M12 3 13.8 8.2 19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z" />
+    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7">
+      <path d="M12 3 14 8.5 19.5 10.5 14 12.5 12 18l-2-5.5L4.5 10.5 10 8.5 12 3Z" />
     </svg>
   );
 }
 
 function ShieldIcon() {
   return (
-    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">
-      <path d="M12 3 5 6v5c0 5.2 3.2 8.4 7 10 3.8-1.6 7-4.8 7-10V6l-7-3Z" />
-      <path d="m9.5 11.5 1.8 1.8 3.4-3.6" />
+    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7">
+      <path d="M12 3 5 6.2V11c0 5.3 3.4 8.6 7 10 3.6-1.4 7-4.7 7-10V6.2L12 3Z" />
+      <path d="m9.3 11.8 1.8 1.8 3.7-3.7" />
     </svg>
   );
 }
 
 function CarIcon() {
   return (
-    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">
-      <path d="M5 13h14l-1.4-4.2a2 2 0 0 0-1.9-1.3H8.3a2 2 0 0 0-1.9 1.3L5 13Z" />
-      <path d="M4 13v4h2m12 0h2v-4M7 17a1.5 1.5 0 1 0 0 .01M17 17a1.5 1.5 0 1 0 0 .01" />
+    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7">
+      <path d="M4.8 12.5h14.4l-1.3-3.9a2 2 0 0 0-1.9-1.4H8a2 2 0 0 0-1.9 1.4l-1.3 3.9Z" />
+      <path d="M4 12.5v4h2.1m11.8 0H20v-4M7.2 16.5a1.3 1.3 0 1 0 .01 0M16.8 16.5a1.3 1.3 0 1 0 .01 0" />
     </svg>
   );
 }
@@ -122,27 +123,28 @@ const iconByIndex = [SparkIcon, ShieldIcon, CarIcon];
 
 function AutomotiveLandingPage() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
-      <div className="pointer-events-none fixed inset-0 -z-10 bg-[linear-gradient(130deg,#020617_0%,#020617_40%,#0f172a_100%)]" />
-      <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_20%_0%,rgba(56,189,248,0.12),transparent_40%),radial-gradient(circle_at_80%_100%,rgba(59,130,246,0.1),transparent_38%)]" />
+    <div className="min-h-screen bg-zinc-950 text-zinc-100">
+      <div className="pointer-events-none fixed inset-0 -z-10 bg-[linear-gradient(150deg,#09090b_0%,#0b0b0d_45%,#111115_100%)]" />
+      <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_15%_5%,rgba(255,255,255,0.08),transparent_35%),radial-gradient(circle_at_88%_80%,rgba(161,161,170,0.07),transparent_38%)]" />
 
       <Navbar />
+
       <main>
         <HeroSection />
 
-        <section id="diferenciais" className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
+        <section id="diferenciais" className="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
           <Reveal>
             <SectionTitle
               badge="Diferenciais"
-              title="Estética automotiva com padrão de cuidado acima do comum"
-              description="Uma experiência pensada para quem exige acabamento sofisticado e atenção real em cada detalhe."
+              title="Um serviço pensado para quem exige presença e acabamento impecável"
+              description="Menos volume, mais critério. Cada carro recebe atenção técnica para um resultado limpo, refinado e memorável."
             />
           </Reveal>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {featureItems.map((item, index) => {
               const Icon = iconByIndex[index % iconByIndex.length];
               return (
-                <Reveal key={item.title} delay={80 + index * 60}>
+                <Reveal key={item.title} delay={70 + index * 60}>
                   <FeatureCard icon={<Icon />} title={item.title} description={item.description} />
                 </Reveal>
               );
@@ -150,19 +152,19 @@ function AutomotiveLandingPage() {
           </div>
         </section>
 
-        <section id="servicos" className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
+        <section id="servicos" className="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
           <Reveal>
             <SectionTitle
               badge="Serviços"
-              title="Soluções premium para transformar o visual do seu carro"
-              description="Seleção de serviços para elevar brilho, proteção e sofisticação com execução profissional."
+              title="Soluções premium para elevar o padrão visual do seu veículo"
+              description="Da manutenção estética ao acabamento de proteção, serviços organizados para resultados consistentes e sofisticados."
             />
           </Reveal>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => {
               const Icon = iconByIndex[index % iconByIndex.length];
               return (
-                <Reveal key={service.title} delay={80 + index * 55}>
+                <Reveal key={service.title} delay={70 + index * 55}>
                   <ServiceCard icon={<Icon />} title={service.title} description={service.description} />
                 </Reveal>
               );
@@ -170,72 +172,65 @@ function AutomotiveLandingPage() {
           </div>
         </section>
 
-        <section className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
-          <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+        <section id="resultado" className="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
             <Reveal>
               <SectionTitle
-                badge="Experiência"
-                title="Mais do que estética: uma sensação de exclusividade ao dirigir"
-                description="Quando o acabamento é premium, o resultado aparece na presença, no cuidado e no impacto visual em cada trajeto."
+                badge="Resultado e Experiência"
+                title="A sensação de dirigir um carro com presença de showroom"
+                description="Um acabamento premium vai além da estética imediata: ele transmite cuidado, valoriza o veículo e transforma a experiência ao volante."
               />
-              <div className="mt-7 space-y-3">
+              <div className="mt-8 space-y-3">
                 {experiencePoints.map((point, index) => (
                   <div
                     key={point}
-                    className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-slate-200"
+                    className="flex items-center gap-3 rounded-xl border border-zinc-700/70 bg-zinc-900/50 px-4 py-3 text-sm text-zinc-200"
                     style={{ transitionDelay: `${index * 80}ms` }}
                   >
-                    <span className="inline-flex h-2.5 w-2.5 rounded-full bg-sky-300 shadow-[0_0_15px_rgba(56,189,248,0.9)]" />
+                    <span className="inline-flex h-2.5 w-2.5 rounded-full bg-zinc-200" />
                     {point}
                   </div>
                 ))}
               </div>
             </Reveal>
-            <Reveal delay={160}>
-              <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-[0_25px_80px_rgba(2,6,23,0.55)] backdrop-blur-xl sm:p-8">
-                <p className="text-xs uppercase tracking-[0.2em] text-sky-200">Mensagem Comercial</p>
-                <h3 className="mt-4 text-2xl font-semibold leading-tight text-white sm:text-3xl">
-                  Reserve seu horário e eleve o nível do seu carro.
-                </h3>
-                <p className="mt-4 text-sm leading-relaxed text-slate-300">
-                  Atendimento exclusivo, mediante agendamento, para entregar acabamento impecável com tempo e atenção dedicados ao seu veículo.
-                </p>
-                <CTAButton
-                  href="https://wa.me/556596199804"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-6 w-full justify-center sm:w-auto"
-                >
-                  Quero agendar agora
-                </CTAButton>
-              </div>
+
+            <Reveal delay={120}>
+              <BeforeAfterSlider
+                beforeImage={heroImage}
+                afterImage={heroImage}
+                beforeLabel="Pré-tratamento"
+                afterLabel="Pós-tratamento"
+              />
+              <p className="mt-3 text-xs text-zinc-400">
+                Área preparada para aplicar pares reais de antes/depois com consistência de enquadramento e iluminação.
+              </p>
             </Reveal>
           </div>
         </section>
 
-        <section className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
+        <section className="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
           <Reveal>
             <SectionTitle
-              badge="Destaques Visuais"
-              title="Galeria com identidade premium e acabamento editorial"
-              description="Estrutura pronta para fotos reais de antes/depois, vitrificação, polimento e entrega."
+              badge="Galeria"
+              title="Composição visual editorial para destacar seus melhores resultados"
+              description="Layout pronto para exibir imagens reais de acabamento, textura e brilho com estética de marca premium."
             />
           </Reveal>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2">
             {galleryItems.map((item, index) => (
-              <Reveal key={item.title} delay={90 + index * 60}>
-                <article className="group relative overflow-hidden rounded-2xl border border-white/10 bg-slate-900/70 shadow-[0_18px_55px_rgba(2,6,23,0.55)]">
+              <Reveal key={item.title} delay={80 + index * 55}>
+                <article className="group relative overflow-hidden rounded-2xl border border-zinc-700/70 bg-zinc-900/70 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
                   {item.image ? (
-                    <img src={item.image} alt={item.title} className="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <img src={item.image} alt={item.title} className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   ) : (
-                    <div className="h-64 w-full bg-[linear-gradient(140deg,rgba(14,165,233,0.18),rgba(15,23,42,0.85),rgba(148,163,184,0.18))] p-6">
-                      <div className="h-full rounded-xl border border-dashed border-sky-200/30 bg-black/20" />
+                    <div className="h-72 w-full bg-[linear-gradient(140deg,rgba(24,24,27,0.9),rgba(39,39,42,0.8),rgba(63,63,70,0.65))] p-6">
+                      <div className="h-full rounded-xl border border-dashed border-zinc-500/50 bg-black/25" />
                     </div>
                   )}
-                  <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(2,6,23,0.82),rgba(2,6,23,0.15)_60%,transparent)]" />
+                  <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(9,9,11,0.85),rgba(9,9,11,0.2)_58%,transparent)]" />
                   <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="text-base font-semibold text-white">{item.title}</h3>
-                    <p className="mt-1 text-xs text-slate-200">{item.subtitle}</p>
+                    <h3 className="text-3xl leading-tight text-zinc-100">{item.title}</h3>
+                    <p className="mt-1 text-xs uppercase tracking-[0.16em] text-zinc-300">{item.subtitle}</p>
                   </div>
                 </article>
               </Reveal>
@@ -243,22 +238,22 @@ function AutomotiveLandingPage() {
           </div>
         </section>
 
-        <section className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
+        <section className="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
           <Reveal>
-            <div className="relative overflow-hidden rounded-3xl border border-sky-300/35 bg-[linear-gradient(125deg,rgba(14,165,233,0.22),rgba(2,6,23,0.95)_35%,rgba(30,41,59,0.9)_100%)] p-7 shadow-[0_25px_90px_rgba(14,165,233,0.2)] sm:p-10">
-              <div className="pointer-events-none absolute -right-24 top-1/2 h-52 w-52 -translate-y-1/2 rounded-full bg-sky-300/20 blur-3xl" />
-              <p className="text-xs uppercase tracking-[0.2em] text-sky-100">Agendamento</p>
-              <h2 className="mt-3 max-w-2xl text-3xl font-semibold leading-tight text-white sm:text-4xl">
-                Vagas limitadas para atendimento exclusivo. Garanta seu horário.
+            <div className="relative overflow-hidden rounded-3xl border border-zinc-500/70 bg-[linear-gradient(130deg,rgba(24,24,27,0.96),rgba(39,39,42,0.92),rgba(12,12,14,0.98))] p-8 shadow-[0_25px_70px_rgba(0,0,0,0.5)] sm:p-10">
+              <div className="pointer-events-none absolute -right-20 top-1/2 h-56 w-56 -translate-y-1/2 rounded-full bg-white/10 blur-3xl" />
+              <p className="text-[11px] uppercase tracking-[0.22em] text-zinc-300">Agendamento</p>
+              <h2 className="mt-3 max-w-2xl text-5xl leading-tight text-zinc-100">
+                Agenda limitada para manter padrão elevado em cada atendimento.
               </h2>
-              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-200 sm:text-base">
-                Atendimento personalizado para entregar o nível de acabamento que seu carro merece.
+              <p className="mt-5 max-w-2xl text-sm leading-relaxed text-zinc-300 sm:text-base">
+                Atendimento exclusivo, mediante agendamento. Fale no WhatsApp e reserve seu horário com antecedência.
               </p>
               <CTAButton
                 href="https://wa.me/556596199804"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-7 w-full justify-center sm:w-auto"
+                className="mt-8 w-full justify-center sm:w-auto"
               >
                 Reservar horário no WhatsApp
               </CTAButton>
@@ -266,35 +261,41 @@ function AutomotiveLandingPage() {
           </Reveal>
         </section>
 
-        <section id="contato" className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
-          <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+        <section id="contato" className="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
             <Reveal>
               <SectionTitle
                 badge="Localização e Contato"
-                title="Fale direto com a No Brilho Estética Automotiva"
-                description="Instagram, WhatsApp e endereço para você reservar com praticidade e atendimento agendado."
+                title="Atendimento premium em Tangará da Serra"
+                description="Canal direto para informações, agendamento e alinhamento do serviço ideal para seu veículo."
               />
-              <div className="mt-7 space-y-3 text-sm text-slate-300">
+
+              <div className="mt-8 space-y-3 text-sm text-zinc-300">
                 <p>
-                  Instagram principal: <span className="font-semibold text-white">@no_brilhoesteticaautomotiva</span>
+                  Instagram principal: <span className="font-semibold text-zinc-100">@no_brilhoesteticaautomotiva</span>
                 </p>
                 <p>
-                  Instagram exibido: <span className="font-semibold text-white">@no_brilhotga</span>
+                  Instagram exibido: <span className="font-semibold text-zinc-100">@no_brilhotga</span>
                 </p>
                 <p>
-                  Proprietário: <span className="font-semibold text-white">@erik_oliveira66</span>
+                  Proprietário: <span className="font-semibold text-zinc-100">@erik_oliveira66</span>
                 </p>
                 <p>
-                  Endereço: <span className="font-semibold text-white">Avenida Ismael José do Nascimento (Rua 1) 2152-W, Jardim Tangará II, Tangará da Serra</span>
+                  Endereço:{' '}
+                  <span className="font-semibold text-zinc-100">
+                    Avenida Ismael José do Nascimento (Rua 1) 2152-W, Jardim Tangará II, Tangará da Serra
+                  </span>
                 </p>
               </div>
             </Reveal>
+
             <Reveal delay={100}>
               <ContactCard />
             </Reveal>
           </div>
         </section>
       </main>
+
       <Footer />
     </div>
   );
