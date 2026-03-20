@@ -26,7 +26,7 @@ function Navbar() {
           <span className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-[#00A3FF]/70 bg-[#121212] font-display text-xl text-white">
             NB
           </span>
-          <span className="font-display text-2xl uppercase tracking-[0.06em] text-white">No Brilho</span>
+          <span className="font-display text-xl uppercase tracking-[0.06em] text-white sm:text-2xl">No Brilho</span>
         </a>
 
         <nav className="hidden items-center gap-9 md:flex">

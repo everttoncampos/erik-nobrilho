@@ -12,7 +12,7 @@ function Footer() {
             <span className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-[#00A3FF]/70 bg-[#121212] font-display text-xl text-white">
               NB
             </span>
-            <span className="font-display text-2xl uppercase text-white">No Brilho</span>
+            <span className="font-display text-xl uppercase text-white sm:text-2xl">No Brilho</span>
           </div>
           <p className="mt-4 font-body text-sm leading-relaxed text-[#E5E5E5]">
             Estética automotiva premium com atendimento exclusivo mediante agendamento.
@@ -24,7 +24,7 @@ function Footer() {
         </div>
 
         <div>
-          <h3 className="font-display text-2xl uppercase text-white">Serviços</h3>
+          <h3 className="font-display text-xl uppercase text-white sm:text-2xl">Serviços</h3>
           <ul className="mt-4 space-y-2">
             {serviceLinks.map((item) => (
               <li key={item}>
@@ -37,7 +37,7 @@ function Footer() {
         </div>
 
         <div>
-          <h3 className="font-display text-2xl uppercase text-white">A Concept</h3>
+          <h3 className="font-display text-xl uppercase text-white sm:text-2xl">A Concept</h3>
           <ul className="mt-4 space-y-2">
             {conceptLinks.map((item) => (
               <li key={item}>
@@ -50,7 +50,7 @@ function Footer() {
         </div>
 
         <div>
-          <h3 className="font-display text-2xl uppercase text-white">Receba Nossa Nova Newsletter</h3>
+          <h3 className="font-display text-xl uppercase text-white sm:text-2xl">Receba Nossa Nova Newsletter</h3>
           <div className="mt-4 space-y-3">
             <input
               type="text"

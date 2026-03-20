@@ -38,10 +38,10 @@ function HeroSlider() {
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h1 className="font-display text-4xl uppercase leading-[1.05] text-white drop-shadow-[0_0_16px_rgba(0,87,255,0.32)] sm:text-5xl lg:text-6xl">
+          <h1 className="font-display text-3xl uppercase leading-[1.08] text-white drop-shadow-[0_0_16px_rgba(0,87,255,0.32)] sm:text-4xl lg:text-5xl">
             {slides[current].title}
           </h1>
-          <p className="mx-auto mt-5 max-w-2xl font-body text-base text-[#E5E5E5] sm:text-lg">{slides[current].subtitle}</p>
+          <p className="mx-auto mt-4 max-w-2xl font-body text-sm text-[#E5E5E5] sm:text-base">{slides[current].subtitle}</p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <CTAButton href="https://wa.me/556596199804" target="_blank" rel="noopener noreferrer">

@@ -13,7 +13,7 @@ function PartnersBanner() {
           {marqueeItems.map((item, index) => (
             <span
               key={`${item}-${index}`}
-              className="inline-flex items-center rounded-md border border-white/25 bg-white/10 px-4 py-2 font-display text-xl uppercase tracking-[0.06em] text-white shadow-[0_0_18px_rgba(255,255,255,0.15)] backdrop-blur-sm sm:text-2xl"
+              className="inline-flex items-center rounded-md border border-white/25 bg-white/10 px-3 py-2 font-display text-base uppercase tracking-[0.06em] text-white shadow-[0_0_18px_rgba(255,255,255,0.15)] backdrop-blur-sm sm:px-4 sm:text-xl"
             >
               {item}
             </span>

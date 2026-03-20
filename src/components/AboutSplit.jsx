@@ -5,7 +5,7 @@ function AboutSplit() {
     <section id="sobre" className="bg-[#0A0A0A] py-20">
       <div className="mx-auto grid w-full max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
         <div>
-          <h2 className="border-l border-[#00A3FF] pl-4 font-display text-5xl uppercase text-white sm:text-6xl">Sobre a No Brilho</h2>
+          <h2 className="border-l border-[#00A3FF] pl-4 font-display text-3xl uppercase text-white sm:text-4xl lg:text-5xl">Sobre a No Brilho</h2>
           <p className="mt-6 font-body text-sm leading-relaxed text-[#E5E5E5] sm:text-base">
             A No Brilho Estética Automotiva entrega atendimento especializado para quem busca alto padrão de acabamento no veículo.
             Unimos técnica, atenção aos detalhes e processos criteriosos para um resultado premium.

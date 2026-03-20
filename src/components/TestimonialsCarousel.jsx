@@ -24,7 +24,7 @@ function TestimonialsCarousel() {
   return (
     <section id="diferenciais" className="bg-[#0A0A0A] py-20">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center font-display text-5xl uppercase text-white sm:text-6xl">Depoimentos</h2>
+        <h2 className="text-center font-display text-3xl uppercase text-white sm:text-4xl lg:text-5xl">Depoimentos</h2>
 
         <div className="mt-10 rounded-xl border border-[#1E1E1E] bg-[#121212] p-6 shadow-[0_12px_30px_rgba(0,0,0,0.3)]">
           <div className="flex items-start justify-between gap-4">
