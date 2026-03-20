@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Teko:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Michroma&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Teko", "Arial Narrow", sans-serif;
-  --font-body: "Rajdhani", "Segoe UI", sans-serif;
+  --font-display: "Michroma", "Segoe UI", sans-serif;
+  --font-body: "Inter", "Segoe UI", sans-serif;
 }
 
 @layer base {
@@ -22,6 +22,30 @@
   h3,
   h4 {
     font-family: var(--font-display);
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
+  }
+}
+
+@layer utilities {
+  .partners-marquee {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .partners-track {
+    display: flex;
+    width: max-content;
+    gap: 1rem;
+    animation: partners-scroll 22s linear infinite;
+    padding-inline: 1rem;
+  }
+
+  @keyframes partners-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
   }
 }

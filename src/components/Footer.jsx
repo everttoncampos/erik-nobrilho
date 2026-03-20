@@ -1,58 +1,85 @@
+import CTAButton from './CTAButton';
+
+const serviceLinks = ['Lavagem', 'Higienização', 'Detalhamento', 'Polimento', 'Vitrificação', 'Insulfilm'];
+const conceptLinks = ['Início', 'Serviços', 'Sobre Nós', 'Contato'];
+
 function Footer() {
   return (
-    <footer className="border-t border-zinc-800 bg-black">
+    <footer className="bg-[#0A0A0A]">
       <div className="mx-auto grid w-full max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
-        <div className="space-y-4">
-          <h3 className="text-3xl leading-tight text-zinc-100">No Brilho</h3>
-          <p className="text-sm leading-relaxed text-zinc-400">
-            Estética automotiva com acabamento premium. Atendimento exclusivo, mediante agendamento.
+        <div>
+          <div className="flex items-center gap-3">
+            <span className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-[#00A3FF]/70 bg-[#121212] font-display text-xl text-white">
+              NB
+            </span>
+            <span className="font-display text-2xl uppercase text-white">No Brilho</span>
+          </div>
+          <p className="mt-4 font-body text-sm leading-relaxed text-[#E5E5E5]">
+            Estética automotiva premium com atendimento exclusivo mediante agendamento.
           </p>
-          <p className="text-sm font-semibold text-zinc-100">(65) 99619-9804</p>
+          <p className="mt-4 font-body text-sm text-[#E5E5E5]">(65) 99619-9804</p>
+          <p className="mt-2 font-body text-sm text-[#E5E5E5]">
+            Avenida Ismael José do Nascimento (Rua 1) 2152-W, Jardim Tangará II, Tangará da Serra
+          </p>
         </div>
 
         <div>
-          <h4 className="text-xl text-zinc-100">Serviços</h4>
-          <ul className="mt-4 space-y-2 text-sm text-zinc-400">
-            <li>Lavagem</li>
-            <li>Detalhamento</li>
-            <li>Polimento</li>
-            <li>Vitrificação</li>
-            <li>Insulfilm</li>
+          <h3 className="font-display text-2xl uppercase text-white">Serviços</h3>
+          <ul className="mt-4 space-y-2">
+            {serviceLinks.map((item) => (
+              <li key={item}>
+                <a href="#servicos" className="font-body text-sm text-[#E5E5E5] transition-colors hover:text-[#00A3FF]">
+                  {item}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
         <div>
-          <h4 className="text-xl text-zinc-100">Contato</h4>
-          <ul className="mt-4 space-y-2 text-sm text-zinc-400">
-            <li>@no_brilhoesteticaautomotiva</li>
-            <li>@no_brilhotga</li>
-            <li>@erik_oliveira66</li>
-            <li>Tangará da Serra - MT</li>
+          <h3 className="font-display text-2xl uppercase text-white">A Concept</h3>
+          <ul className="mt-4 space-y-2">
+            {conceptLinks.map((item) => (
+              <li key={item}>
+                <a href={`#${item === 'Início' ? 'inicio' : item === 'Serviços' ? 'servicos' : item === 'Sobre Nós' ? 'sobre' : 'contato'}`} className="font-body text-sm text-[#E5E5E5] transition-colors hover:text-[#00A3FF]">
+                  {item}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
         <div>
-          <h4 className="text-xl text-zinc-100">Receba Novidades</h4>
+          <h3 className="font-display text-2xl uppercase text-white">Receba Nossa Nova Newsletter</h3>
           <div className="mt-4 space-y-3">
             <input
               type="text"
               placeholder="Nome"
-              className="w-full rounded-sm border border-zinc-700 bg-zinc-900 px-3 py-2 text-sm text-zinc-200 outline-none placeholder:text-zinc-500 focus:border-blue-400"
+              className="w-full rounded-md border border-[#A3A3A3] bg-[#121212] px-3 py-2 font-body text-sm text-[#E5E5E5] outline-none placeholder:text-[#A3A3A3] focus:border-[#00A3FF]"
             />
             <input
               type="email"
               placeholder="E-mail"
-              className="w-full rounded-sm border border-zinc-700 bg-zinc-900 px-3 py-2 text-sm text-zinc-200 outline-none placeholder:text-zinc-500 focus:border-blue-400"
+              className="w-full rounded-md border border-[#A3A3A3] bg-[#121212] px-3 py-2 font-body text-sm text-[#E5E5E5] outline-none placeholder:text-[#A3A3A3] focus:border-[#00A3FF]"
             />
-            <button className="inline-flex items-center justify-center rounded-sm border border-blue-500 bg-blue-700 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-blue-600">
-              Inscrever-se
-            </button>
+            <CTAButton href="#inicio" className="w-full justify-center">
+              Inscreva-se
+            </CTAButton>
           </div>
         </div>
       </div>
 
-      <div className="border-t border-zinc-900 py-5 text-center text-xs text-zinc-500">
-        No Brilho Estética Automotiva • Reserve seu horário e eleve o nível do seu carro.
+      <div className="border-t border-[#121212]">
+        <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 sm:px-6 md:flex-row lg:px-8">
+          <p className="font-body text-xs text-[#A3A3A3]">© 2026 No Brilho. Todos os direitos reservados.</p>
+          <div className="flex items-center gap-3">
+            {['IG', 'FB', 'YT'].map((item) => (
+              <a key={item} href="#contato" className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-[#2A2A2A] font-body text-xs text-[#E5E5E5] transition-colors hover:border-[#00A3FF] hover:text-[#00A3FF]">
+                {item}
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
     </footer>
   );

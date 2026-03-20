@@ -1,4 +1,3 @@
-import heroImage from '../assets/hero.png';
 import CTAButton from './CTAButton';
 import Reveal from './Reveal';
 
@@ -39,7 +38,6 @@ function HeroSection() {
           <div className="relative mx-auto w-full max-w-xl">
             <div className="absolute -inset-4 rounded-[2rem] bg-[linear-gradient(135deg,rgba(255,255,255,0.14),rgba(113,113,122,0.1),rgba(9,9,11,0.4))] blur-2xl" />
             <div className="relative overflow-hidden rounded-[2rem] border border-zinc-700/80 bg-zinc-900/65 shadow-[0_25px_70px_rgba(0,0,0,0.6)]">
-              <img src={heroImage} alt="Veículo com acabamento premium" className="h-[340px] w-full object-cover sm:h-[500px]" />
               <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(145deg,rgba(9,9,11,0.75),transparent_44%,rgba(9,9,11,0.55))]" />
               <div className="absolute bottom-4 left-4 right-4 rounded-2xl border border-zinc-600/60 bg-zinc-950/75 p-4 backdrop-blur-xl">
                 <p className="text-[11px] uppercase tracking-[0.22em] text-zinc-300">@no_brilhotga</p>
