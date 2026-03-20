@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import heroBackground from '../../image-background.png';
+import heroBackground from '../assets/hero.png';
 import CTAButton from './CTAButton';
 
 const slides = [
