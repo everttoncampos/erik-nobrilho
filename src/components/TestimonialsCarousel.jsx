@@ -22,8 +22,9 @@ function TestimonialsCarousel() {
   const next = () => setCurrent((current + 1) % testimonials.length);
 
   return (
-    <section id="diferenciais" className="bg-[#0A0A0A] py-20">
-      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section id="diferenciais" className="relative overflow-hidden bg-[#121212] py-20">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_12%_85%,rgba(0,87,255,0.14),transparent_36%)]" />
+      <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-center font-display text-3xl uppercase text-white sm:text-4xl lg:text-5xl">Depoimentos</h2>
 
         <div className="mt-10 rounded-xl border border-[#1E1E1E] bg-[#121212] p-6 shadow-[0_12px_30px_rgba(0,0,0,0.3)]">

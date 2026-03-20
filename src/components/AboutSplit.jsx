@@ -2,7 +2,7 @@ import heroBackground from '../assets/hero.png';
 
 function AboutSplit() {
   return (
-    <section id="sobre" className="bg-[#0A0A0A] py-20">
+    <section id="sobre" className="bg-[linear-gradient(180deg,#0A0A0A_0%,#101014_100%)] py-20">
       <div className="mx-auto grid w-full max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
         <div>
           <h2 className="border-l border-[#00A3FF] pl-4 font-display text-3xl uppercase text-white sm:text-4xl lg:text-5xl">Sobre a No Brilho</h2>

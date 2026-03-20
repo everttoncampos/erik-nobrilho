@@ -12,8 +12,9 @@ const services = [
 
 function ServicesGrid() {
   return (
-    <section id="servicos" className="bg-[#0A0A0A] py-20">
-      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section id="servicos" className="relative overflow-hidden bg-[#121212] py-20">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_85%_10%,rgba(0,163,255,0.1),transparent_36%)]" />
+      <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="font-display text-3xl uppercase text-white sm:text-4xl lg:text-5xl">Conheça Nossos Serviços</h2>
           <p className="mx-auto mt-4 max-w-2xl font-body text-sm text-[#A3A3A3] sm:text-base">

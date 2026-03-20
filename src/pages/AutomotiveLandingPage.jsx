@@ -18,7 +18,7 @@ function AutomotiveLandingPage() {
         <PartnersBanner />
         <TestimonialsCarousel />
         <FinalCTA />
-        <section id="contato" className="bg-[#0A0A0A] py-10">
+        <section id="contato" className="border-t border-[#1E1E1E] bg-[#121212] py-10">
           <div className="mx-auto w-full max-w-7xl px-4 font-body text-sm text-[#E5E5E5] sm:px-6 lg:px-8">
             <p>
               WhatsApp: <span className="font-semibold text-white">(65) 99619-9804</span>
